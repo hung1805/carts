@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
+
+@layer components {
+  body {
+    @apply overflow-x-hidden;
+  }
+  .my-table-spacing {
+    border-spacing: theme("spacing.3");
+  }
+  .prevBtn {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8;
+  }
+  .nextBtn {
+    @apply lg:absolute lg:top-0 lg:right-0 lg:z-10  lg:mr-8  lg:flex lg:items-center lg:justify-center;
+  }
+  .primary-btn {
+    @apply uppercase border border-custom_grey px-2 py-1 hover:text-white hover:bg-custom_orange md:text-xs lg:text-xs;
+  }
+  .secondary-btn {
+    @apply text-white bg-custom_grey px-2 py-1 mt-2 rounded-sm uppercase hover:bg-custom_orange;
+  }
+  .third-btn {
+    @apply block uppercase text-white bg-custom_orange px-3 py-1 rounded;
+  }
+}
+.swiper-slide-active {
+  margin-left: 0;
+}
